@@ -1,0 +1,13 @@
+app = "hoynococinoback"  # Este es el nombre de tu aplicación, elige uno único si es necesario.
+
+[build]
+# Usaremos el Dockerfile render o el .gitpod.Dockerfile, según cuál sea más adecuado.
+dockerfile = "./Dockerfile.render"  # O si prefieres el otro archivo: dockerfile = "./.gitpod.Dockerfile"
+
+[env]
+DATABASE_URL = "postgres://gitpod:postgres@localhost:5432/example"
+FLASK_APP_KEY = "any key works"
+FLASK_APP = "src/app.py"
+FLASK_DEBUG = "1"
+DEBUG = "TRUE"
+BACKEND_URL = "https://improved-space-couscous-4jqxg79xp4vx3jq5r-3001.app.github.dev/"
